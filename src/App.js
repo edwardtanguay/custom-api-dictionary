@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
+import { ImSpinner9 } from 'react-icons/im';
 import './App.scss';
 
 const _searchWord = 'reptile';
@@ -40,7 +41,7 @@ function App() {
 			</form>
 
 			{!wordObj.word && (
-				<div>Loading...</div>
+				<div><ImSpinner9 className="spinner"/></div>
 			)}
 			{wordObj.word && (
 				<>
