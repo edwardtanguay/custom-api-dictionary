@@ -1,0 +1,6 @@
+- x call api (https://api.dictionaryapi.dev/api/v2/entries/en/test) and show in console.log
+	- fetch with .then() syntax
+
+	- show state variable on page
+
+
