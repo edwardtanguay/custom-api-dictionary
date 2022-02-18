@@ -19,7 +19,7 @@ function App() {
 				meaning: data[0].meanings[0].definitions[0].definition
 			};
 			setWordObj(_wordObj);
-		}, 2000);
+		}, 1000);
 		
 		// WITH .THEN()
 		// setTimeout(() => {

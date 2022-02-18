@@ -34,11 +34,16 @@ body {
   margin: 0 0 0 30px;
 }
 
+.App .word {
+  color: yellow;
+  margin: 10px 0 5px 0;
+}
+
 .App .spinner {
   font-size: 2.4rem;
-  color: #888;
+  color: yellow;
   animation: spin infinite 2s linear;
-  margin-top: 10px;
+  margin: 20px 0 0 0;
 }
 
 @keyframes spin {
