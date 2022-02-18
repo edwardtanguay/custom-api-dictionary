@@ -36,7 +36,7 @@ function App() {
 		<div className="App">
 			<h1>API Dictionary</h1>
 			<form>
-				<input type="text" value={searchWord} onChange={(e) => setSearchWord(e.target.value)} />
+				<input autoFocus type="text" value={searchWord} onChange={(e) => setSearchWord(e.target.value)} />
 				<button onClick={(e) => handleSearchButtonClick(e)}>Search</button>
 			</form>
 
