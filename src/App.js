@@ -1,9 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import './App.scss';
 
+const _searchWord = 'reptile';
+
 function App() {
-	const [wordObj, setWordObj] = useState({ word: "hello" });
-	const [searchWord, setSearchWord] = useState('');
+	const [wordObj, setWordObj] = useState({});
+	const [searchWord, setSearchWord] = useState(_searchWord);
 
 	const lookupWord = async (word) => {
 		const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
@@ -17,7 +20,7 @@ function App() {
 	}
 
 	useEffect(() => {
-		lookupWord('book');
+		lookupWord(searchWord);
 	}, []);
 
 	const handleSearchButtonClick = (e) => {
