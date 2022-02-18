@@ -6,7 +6,7 @@ function App() {
 	const [wordObj, setWordObj] = useState({ word: "hello" });
 
 	useEffect(async () => {
-		const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/dog';
+		const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/cup';
 		const response = await fetch(url);
 		const data = await response.json();
 		const _wordObj = {
