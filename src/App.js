@@ -27,6 +27,7 @@ function App() {
 
 	const handleSearchButtonClick = (e) => {
 		e.preventDefault();
+		setWordObj({});
 		lookupWord(searchWord);
 	}
 
@@ -39,14 +40,14 @@ function App() {
 			</form>
 
 			{!wordObj.word && (
-				< div > Loading...</div>
+				<div>Loading...</div>
 			)}
 			{wordObj.word && (
-					<>
-						<div className="word">{wordObj.word}</div>
-						<div className="meaning">{wordObj.meaning}</div>
-					</>
-				)
+				<>
+					<div className="word">{wordObj.word}</div>
+					<div className="meaning">{wordObj.meaning}</div>
+				</>
+			)
 			}
 		</div >
 	);
