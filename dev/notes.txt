@@ -4,8 +4,7 @@
 	- x state variable: searchWord, connect to input box 
 	- x button that fetchs new word data from API 
 	- x create lookupWord function and call from useEffect and handleButton function
-
-- implement loading spinner
+- .. implement loading spinner
 - fetch with .then() syntax
 
 
