@@ -1,6 +1,8 @@
 - x call api (https://api.dictionaryapi.dev/api/v2/entries/en/test) and show in console.log
-	- show state variable on page
- 
+	- x show state variable on page
+- ,, input box 
+	- x state variable: searchWord, connect to input box 
+	- .. button that fetchs new word data from API 
 
 
 	- fetch with .then() syntax
