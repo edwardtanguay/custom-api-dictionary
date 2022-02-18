@@ -20,6 +20,20 @@ function App() {
 			};
 			setWordObj(_wordObj);
 		}, 2000);
+		
+		// WITH .THEN()
+		// setTimeout(() => {
+		// 	const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+		// 	fetch(url).then(response => {
+		// 		return response.json();
+		// 	}).then(data => {
+		// 		const _wordObj = {
+		// 			word: data[0].word,
+		// 			meaning: data[0].meanings[0].definitions[0].definition
+		// 		};
+		// 		setWordObj(_wordObj);
+		// 	})
+		// }, 2000);
 	}
 
 	useEffect(() => {
