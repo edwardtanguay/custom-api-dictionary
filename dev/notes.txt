@@ -3,6 +3,7 @@
 - ,, input box 
 	- x state variable: searchWord, connect to input box 
 	- .. button that fetchs new word data from API 
+		- .. create lookupWord function and call from useEffect and handleButton function
 
 
 	- fetch with .then() syntax
